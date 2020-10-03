@@ -1,0 +1,11 @@
+.wwvce-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #1a399d, #693bc5);
+  position: relative;
+}

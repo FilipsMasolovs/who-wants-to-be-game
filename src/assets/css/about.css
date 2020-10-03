@@ -1,0 +1,38 @@
+.wwvce-about {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wwvce-about-inner {
+  background-color: #fff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+  color: #000;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+}
+.wwvce-about-close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+.wwvce-about-close-button:focus {
+  outline: none;
+}

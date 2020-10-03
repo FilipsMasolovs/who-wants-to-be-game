@@ -1,0 +1,46 @@
+.wwvce-login {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wwvce-login-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.wwvce-login-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.wwvce-login-input {
+  padding: 10px 13px;
+  border: 1px #dedede solid;
+  border-radius: 5px;
+  color: #515162;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+}
+.wwvce-login-input:focus,
+.wwvce-login-start-game:focus,
+.wwvce-login-open-about:focus {
+  outline: none;
+}
+.wwvce-login-open-about {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.wwvce-login-start-game {
+  background-color: #6bdd4d;
+  border: 1px #6bdd4d solid;
+  border-radius: 5px;
+  padding: 10px 13px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
