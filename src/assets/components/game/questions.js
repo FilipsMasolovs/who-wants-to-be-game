@@ -12,7 +12,7 @@ function Questions () {
     {
       question: '1st',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -21,7 +21,7 @@ function Questions () {
     {
       question: '2nd',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -30,7 +30,7 @@ function Questions () {
     {
       question: '3rd',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -39,7 +39,7 @@ function Questions () {
     {
       question: '4th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -48,7 +48,7 @@ function Questions () {
     {
       question: '5th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -57,7 +57,7 @@ function Questions () {
     {
       question: '6th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -66,7 +66,7 @@ function Questions () {
     {
       question: '7th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -75,7 +75,7 @@ function Questions () {
     {
       question: '8th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -84,7 +84,7 @@ function Questions () {
     {
       question: '9th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -93,7 +93,7 @@ function Questions () {
     {
       question: '10th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -102,7 +102,7 @@ function Questions () {
     {
       question: '11th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -111,7 +111,7 @@ function Questions () {
     {
       question: '12th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -120,7 +120,7 @@ function Questions () {
     {
       question: '13th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -129,7 +129,7 @@ function Questions () {
     {
       question: '14th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -138,7 +138,7 @@ function Questions () {
     {
       question: '15th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -147,7 +147,7 @@ function Questions () {
     {
       question: '16th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -156,7 +156,7 @@ function Questions () {
     {
       question: '17th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -165,7 +165,7 @@ function Questions () {
     {
       question: '18th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -174,7 +174,7 @@ function Questions () {
     {
       question: '19th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}
@@ -183,7 +183,7 @@ function Questions () {
     {
       question: '20th',
       answers: [
-        {'answer' : '04.08.2017', 'value' : 1},
+        {'answer' : 'ABC', 'value' : 1},
         {'answer' : '04.08.2016', 'value' : 0},
         {'answer' : '17.08.2017', 'value' : 0},
         {'answer' : '04.07.2017', 'value' : 0}

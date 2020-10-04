@@ -5,6 +5,7 @@ import About from './assets/components/about'
 import Login from './assets/components/login'
 import Game from './assets/components/game'
 import Fail from './assets/components/game/fail'
+import Finished from './assets/components/game/finished'
 
 class App extends React.Component {
   constructor (props) {
@@ -13,6 +14,7 @@ class App extends React.Component {
       isAboutVisible: false,
       isGameStarted: false,
       isGameFailed: false,
+      isGameFinished: false,
       playerName: '',
       points: 0
     };
@@ -20,6 +22,7 @@ class App extends React.Component {
     this.startGame = this.startGame.bind(this);
     this.handleGameFail = this.handleGameFail.bind(this);
     this.restartGame = this.restartGame.bind(this);
+    this.handleGameFinish = this.handleGameFinish.bind(this);
   }
 
   openAbout () {
@@ -51,8 +54,17 @@ class App extends React.Component {
     this.setState({
       isGameStarted: false,
       isGameFailed: false,
+      isGameFinished: false,
       playerName: '',
       points: 0
+    })
+  }
+
+  handleGameFinish (e) {
+    this.setState({
+      isGameStarted: false,
+      isGameFinished: true,
+      points: e
     })
   }
 
@@ -61,9 +73,10 @@ class App extends React.Component {
       <div className='wwvce-container'>
         {!this.state.isGameStarted && <Spotlight />}
         {!this.state.isGameStarted && <Login onOpenAbout={this.openAbout} onStartGame={this.startGame} />}
-        {this.state.isGameStarted && <Game onGameFail={this.handleGameFail} />}
+        {this.state.isGameStarted && <Game onGameFail={this.handleGameFail} onGameFinish={this.handleGameFinish} />}
         {this.state.isAboutVisible && <About onCloseAbout={this.openAbout} />}
         {this.state.isGameFailed && <Fail onRestartGame={this.restartGame} />}
+        {this.state.isGameFinished && <Finished playerName={this.state.playerName} points={this.state.points} onRestartGame={this.restartGame} />}
         <Copyright />
       </div>
     );

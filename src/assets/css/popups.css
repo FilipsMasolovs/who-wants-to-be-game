@@ -1,5 +1,6 @@
 .wwvce-about,
-.wwvce-fail {
+.wwvce-fail,
+.wwvce-finished {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   background-color: rgba(0,0,0,0.7);
@@ -10,7 +11,8 @@
   align-items: center;
 }
 .wwvce-about-inner,
-.wwvce-fail-inner {
+.wwvce-fail-inner,
+.wwvce-finished-inner {
   background-color: #fff;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -25,4 +27,10 @@
   position: relative;
   overflow: hidden;
   z-index: 1000;
+}
+.wwvce-finished-logo {
+  width: 100%;
+  max-width: 295px;
+  height: auto;
+  margin-bottom: 30px;
 }

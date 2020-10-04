@@ -1,5 +1,6 @@
 .wwvce-about-close-button,
-.wwvce-fail-close-button {
+.wwvce-fail-close-button,
+.wwvce-finished-close-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -9,7 +10,8 @@
   margin: 5px;
 }
 .wwvce-about-close-button:focus,
-.wwvce-fail-close-button:focus {
+.wwvce-fail-close-button:focus,
+.wwvce-finished-close-button:focus {
   outline: none;
 }
 .wwvce-game-question-answer {

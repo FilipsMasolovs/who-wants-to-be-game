@@ -20,15 +20,20 @@ class Game extends React.Component {
   }
 
   handleAnswerClick (e) {
-    Questions()[this.state.currentQuestion].answers.forEach((answer) => {
+    Questions()[this.state.questionIndexes[this.state.currentQuestion]].answers.forEach((answer) => {
       if (answer.answer === e) {
         this.setState({
           points: this.state.points + answer.value,
-          currentQuestion: this.state.currentQuestion + 1,
+          currentQuestion: this.state.currentQuestion + 1
         })
       }
+      console.log(this.state.points)
     })
     this.refs.child.resetTimer()
+    if (this.state.currentQuestion === 9) {
+      this.props.onGameFinish(this.state.points)
+      return
+    }
   }
 
   render () {
