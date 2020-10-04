@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/who-wants-to-be-game/static/css/main.506785d5.chunk.css",
-    "main.js": "/who-wants-to-be-game/static/js/main.0e2f8b3e.chunk.js",
-    "main.js.map": "/who-wants-to-be-game/static/js/main.0e2f8b3e.chunk.js.map",
+    "main.js": "/who-wants-to-be-game/static/js/main.c3df7a0d.chunk.js",
+    "main.js.map": "/who-wants-to-be-game/static/js/main.c3df7a0d.chunk.js.map",
     "runtime-main.js": "/who-wants-to-be-game/static/js/runtime-main.33fb4199.js",
     "runtime-main.js.map": "/who-wants-to-be-game/static/js/runtime-main.33fb4199.js.map",
     "static/js/2.ca755461.chunk.js": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js",
     "static/js/2.ca755461.chunk.js.map": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js.map",
     "index.html": "/who-wants-to-be-game/index.html",
-    "precache-manifest.d58097ff2cce8b9cf5644c5bcdf1164f.js": "/who-wants-to-be-game/precache-manifest.d58097ff2cce8b9cf5644c5bcdf1164f.js",
+    "precache-manifest.94230a57aad33c08fd56961bf52bdda2.js": "/who-wants-to-be-game/precache-manifest.94230a57aad33c08fd56961bf52bdda2.js",
     "service-worker.js": "/who-wants-to-be-game/service-worker.js",
     "static/css/main.506785d5.chunk.css.map": "/who-wants-to-be-game/static/css/main.506785d5.chunk.css.map",
     "static/js/2.ca755461.chunk.js.LICENSE.txt": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.33fb4199.js",
     "static/js/2.ca755461.chunk.js",
     "static/css/main.506785d5.chunk.css",
-    "static/js/main.0e2f8b3e.chunk.js"
+    "static/js/main.c3df7a0d.chunk.js"
   ]
 }
