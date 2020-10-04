@@ -7,12 +7,19 @@ class Login extends React.Component {
       playerName: ''
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleEnterPress = this.handleEnterPress.bind(this);
   }
 
   handleChange (e) {
     this.setState({
       playerName: e.target.value
     })
+  }
+
+  handleEnterPress (e) {
+    if (e.key === 'Enter') {
+      this.props.onStartGame(this.state.playerName)
+    }
   }
 
   render() {
@@ -24,17 +31,18 @@ class Login extends React.Component {
             type="text"
             className="wwvce-login-input"
             onChange={this.handleChange}
+            onKeyPress={this.handleEnterPress}
           />
         </div>
-        <div className='wwvce-login-inner'>
-          <button
-            onClick={this.props.onOpenAbout}
-            className='wwvce-login-open-about'
-          >Learn more...</button>
+        <div className='wwvce-login-inner wwvce-login-inner-controls'>
           <button
             onClick={this.props.onStartGame.bind(this, this.state.playerName)}
             className='wwvce-login-start-game'
           >START</button>
+          <button
+            onClick={this.props.onOpenAbout}
+            className='wwvce-login-open-about'
+          >Learn more...</button>
         </div>
       </div>
     );
