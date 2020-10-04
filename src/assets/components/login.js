@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Login extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       playerName: ''
@@ -22,7 +22,7 @@ class Login extends React.Component {
     }
   }
 
-  render() {
+  render () {
     return (
       <div className='wwvce-login'>
         <div className='wwvce-login-inner'>

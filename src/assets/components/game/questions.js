@@ -1,4 +1,4 @@
-function Questions() {
+function Questions () {
   return ([
     {
       question: 'When was Visual Composer first published?',

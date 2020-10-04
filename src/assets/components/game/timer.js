@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Timer extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       minutes: 6,
@@ -9,7 +9,7 @@ class Timer extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.myInterval = setInterval(() => {
       if (this.state.seconds > 0) {
         this.setState(({ seconds }) => ({
@@ -29,7 +29,14 @@ class Timer extends React.Component {
     }, 1000)
   }
 
-  render() {
+  resetTimer () {
+    this.setState({
+      minutes: 6,
+      seconds: 0
+    })
+  }
+
+  render () {
     if (this.state.minutes === 0 && this.state.seconds === 0) {
       this.props.onGameFail()
     }

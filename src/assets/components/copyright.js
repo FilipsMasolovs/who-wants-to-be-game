@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Copyright() {
+function Copyright () {
   return (
     <a
       className='wwvce-copyright'

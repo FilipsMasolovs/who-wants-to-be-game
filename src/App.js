@@ -7,7 +7,7 @@ import Game from './assets/components/game'
 import Fail from './assets/components/game/fail'
 
 class App extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       isAboutVisible: false,
@@ -56,7 +56,7 @@ class App extends React.Component {
     })
   }
 
-  render() {
+  render () {
     return (
       <div className='wwvce-container'>
         {!this.state.isGameStarted && <Spotlight />}

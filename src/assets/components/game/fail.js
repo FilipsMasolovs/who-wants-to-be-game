@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Fail extends React.Component {
-  render() {
+  render () {
     return (
       <div className='wwvce-fail'>
         <div className='wwvce-fail-inner'>

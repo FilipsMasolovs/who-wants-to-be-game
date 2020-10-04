@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/VC_horizontal_white text.png'
 
-function Spotlight() {
+function Spotlight () {
   return (
     <div className='wwvce-spotlight'>
       <img
