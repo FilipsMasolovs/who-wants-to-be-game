@@ -1,0 +1,11 @@
+.wwvce-game-question {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.wwvce-game-question-answers {
+  display: flex;
+  flex-flow: wrap;
+  gap: 16px;
+}

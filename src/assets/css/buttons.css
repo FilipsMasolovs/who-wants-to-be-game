@@ -12,3 +12,20 @@
 .wwvce-fail-close-button:focus {
   outline: none;
 }
+.wwvce-game-question-answer {
+  border: 0;
+  padding: 14px 40px;
+  width: calc(50% - 8px);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 15px;
+  background-color: #ffae27;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.wwvce-game-question-answer:hover,
+.wwvce-game-question-answer:focus {
+  background-color: #f19730;
+  outline: none;
+}

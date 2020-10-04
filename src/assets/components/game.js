@@ -7,8 +7,16 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentQuestion: 0
+      points: 0,
+      currentQuestion: 0,
+      questionIndexes: []
     };
+    this.handleAnswerClick = this.handleAnswerClick.bind(this);
+
+    while(this.state.questionIndexes.length < 10){
+      let i = Math.floor(Math.random() * 20) + 1;
+      if(this.state.questionIndexes.indexOf(i) === -1) this.state.questionIndexes.push(i);
+    }
   }
 
   componentDidMount () {
@@ -31,16 +39,21 @@ class Game extends React.Component {
     }, 1000)
   }
 
-  render() {
-    let questionIndexes = [];
-    while(questionIndexes.length < 10){
-      let i = Math.floor(Math.random() * 20) + 1;
-      if(questionIndexes.indexOf(i) === -1) questionIndexes.push(i);
-    }
+  handleAnswerClick (e) {
+    Questions()[this.state.currentQuestion].answers.forEach((answer) => {
+      if (answer.answer === e) {
+        this.setState({
+          points: this.state.points + answer.value,
+          currentQuestion: this.state.currentQuestion + 1,
+        })
+      }
+    })
+  }
 
+  render() {
     return (
       <div className='wwvce-game'>
-        <Question question={Questions()[this.state.currentQuestion]} />
+        <Question onClick={this.handleAnswerClick} question={Questions()[this.state.questionIndexes[this.state.currentQuestion]]} />
         <Timer onGameFail={this.props.onGameFail} />
       </div>
     );
