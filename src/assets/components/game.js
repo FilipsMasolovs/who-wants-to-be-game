@@ -7,7 +7,6 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      points: 0,
       currentQuestion: 0
     };
   }
@@ -42,7 +41,7 @@ class Game extends React.Component {
     return (
       <div className='wwvce-game'>
         <Question question={Questions()[this.state.currentQuestion]} />
-        <Timer />
+        <Timer onGameFail={this.props.onGameFail} />
       </div>
     );
   }

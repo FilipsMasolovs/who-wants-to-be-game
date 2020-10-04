@@ -1,0 +1,14 @@
+.wwvce-about-close-button,
+.wwvce-fail-close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+.wwvce-about-close-button:focus,
+.wwvce-fail-close-button:focus {
+  outline: none;
+}

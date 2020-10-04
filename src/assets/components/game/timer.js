@@ -30,6 +30,10 @@ class Timer extends React.Component {
   }
 
   render() {
+    if (this.state.minutes === 0 && this.state.seconds === 0) {
+      this.props.onGameFail()
+    }
+
     return (
       <div className='wwvce-game-timer'>
         {this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}

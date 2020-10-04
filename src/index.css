@@ -1,9 +1,10 @@
 @import 'assets/css/mainStyles.css';
 @import 'assets/css/copyright.css';
 @import 'assets/css/spotlight.css';
-@import 'assets/css/about.css';
+@import 'assets/css/popups.css';
 @import 'assets/css/login.css';
 @import 'assets/css/timer.css';
+@import 'assets/css/buttons.css';
 
 *,
 *::after,
