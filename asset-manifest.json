@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/who-wants-to-be-game/static/css/main.59f27794.chunk.css",
-    "main.js": "/who-wants-to-be-game/static/js/main.3b81b370.chunk.js",
-    "main.js.map": "/who-wants-to-be-game/static/js/main.3b81b370.chunk.js.map",
+    "main.css": "/who-wants-to-be-game/static/css/main.2f6fc77c.chunk.css",
+    "main.js": "/who-wants-to-be-game/static/js/main.ac07e2ce.chunk.js",
+    "main.js.map": "/who-wants-to-be-game/static/js/main.ac07e2ce.chunk.js.map",
     "runtime-main.js": "/who-wants-to-be-game/static/js/runtime-main.33fb4199.js",
     "runtime-main.js.map": "/who-wants-to-be-game/static/js/runtime-main.33fb4199.js.map",
-    "static/js/2.a580e648.chunk.js": "/who-wants-to-be-game/static/js/2.a580e648.chunk.js",
-    "static/js/2.a580e648.chunk.js.map": "/who-wants-to-be-game/static/js/2.a580e648.chunk.js.map",
+    "static/js/2.ca755461.chunk.js": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js",
+    "static/js/2.ca755461.chunk.js.map": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js.map",
     "index.html": "/who-wants-to-be-game/index.html",
-    "precache-manifest.749c071e31db554e0c7863817b6442dc.js": "/who-wants-to-be-game/precache-manifest.749c071e31db554e0c7863817b6442dc.js",
+    "precache-manifest.11ae69469394bc87ebeb61e2595ec095.js": "/who-wants-to-be-game/precache-manifest.11ae69469394bc87ebeb61e2595ec095.js",
     "service-worker.js": "/who-wants-to-be-game/service-worker.js",
-    "static/css/main.59f27794.chunk.css.map": "/who-wants-to-be-game/static/css/main.59f27794.chunk.css.map",
-    "static/js/2.a580e648.chunk.js.LICENSE.txt": "/who-wants-to-be-game/static/js/2.a580e648.chunk.js.LICENSE.txt",
+    "static/css/main.2f6fc77c.chunk.css.map": "/who-wants-to-be-game/static/css/main.2f6fc77c.chunk.css.map",
+    "static/js/2.ca755461.chunk.js.LICENSE.txt": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js.LICENSE.txt",
     "static/media/VC_horizontal_white text.png": "/who-wants-to-be-game/static/media/VC_horizontal_white text.f3e41a14.png"
   },
   "entrypoints": [
     "static/js/runtime-main.33fb4199.js",
-    "static/js/2.a580e648.chunk.js",
-    "static/css/main.59f27794.chunk.css",
-    "static/js/main.3b81b370.chunk.js"
+    "static/js/2.ca755461.chunk.js",
+    "static/css/main.2f6fc77c.chunk.css",
+    "static/js/main.ac07e2ce.chunk.js"
   ]
 }
