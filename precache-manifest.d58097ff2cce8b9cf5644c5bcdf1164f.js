@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b755d4a54358a68b2a64d68e56d941c",
+    "revision": "c528e1a39d4ab7d190dfd94312175c59",
     "url": "/who-wants-to-be-game/index.html"
   },
   {
-    "revision": "cb590fff02a0ca2fdb1e",
-    "url": "/who-wants-to-be-game/static/css/main.bb4f3004.chunk.css"
+    "revision": "c8ca9d6e48395b89f5c1",
+    "url": "/who-wants-to-be-game/static/css/main.506785d5.chunk.css"
   },
   {
     "revision": "0c37eb270e8ca7dd3cd5",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/who-wants-to-be-game/static/js/2.ca755461.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cb590fff02a0ca2fdb1e",
-    "url": "/who-wants-to-be-game/static/js/main.5e152119.chunk.js"
+    "revision": "c8ca9d6e48395b89f5c1",
+    "url": "/who-wants-to-be-game/static/js/main.0e2f8b3e.chunk.js"
   },
   {
     "revision": "b1d97a7153030b3534e7",
