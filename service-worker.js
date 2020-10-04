@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/who-wants-to-be-game/precache-manifest.1fa4061de5b32939fd6c881e25d8f903.js"
+  "/who-wants-to-be-game/precache-manifest.eda9ca2dad93190811cca467a1cc8903.js"
 );
 
 self.addEventListener('message', (event) => {
