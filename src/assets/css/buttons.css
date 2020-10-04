@@ -23,7 +23,7 @@
   background-color: #ffae27;
   cursor: pointer;
   transition: 0.4s;
-  margin: 0 10px;
+  margin: 5px 10px;
   transition: background-color 0.4s, outline 0.4s;
 }
 .wwvce-game-question-answer:hover,
@@ -34,7 +34,6 @@
 
 @media screen and (min-width: 480px) {
   .wwvce-game-question-answer {
-    margin: 0;
-    width: calc(50% - 8px);
+    width: calc(50% - 20px);
   }
 }

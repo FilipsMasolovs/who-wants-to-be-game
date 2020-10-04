@@ -1,14 +1,15 @@
 .wwvce-login {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 .wwvce-login-inner {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+}
+.wwvce-login-inner > * {
+  margin: 15px;
 }
 .wwvce-login-title {
   font-weight: 500;
