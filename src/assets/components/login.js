@@ -26,10 +26,10 @@ class Login extends React.Component {
     return (
       <div className='wwvce-login'>
         <div className='wwvce-login-inner'>
-          <span className="wwvce-login-title">Please enter your name:</span>
+          <span className='wwvce-login-title'>Please enter your name:</span>
           <input
-            type="text"
-            className="wwvce-login-input"
+            type='text'
+            className='wwvce-login-input'
             onChange={this.handleChange}
             onKeyPress={this.handleEnterPress}
           />

@@ -12,7 +12,6 @@ class Game extends React.Component {
       questionIndexes: []
     };
     this.handleAnswerClick = this.handleAnswerClick.bind(this);
-
     while(this.state.questionIndexes.length < 10){
       let i = Math.floor(Math.random() * 20) + 1;
       if(this.state.questionIndexes.indexOf(i) === -1) this.state.questionIndexes.push(i);

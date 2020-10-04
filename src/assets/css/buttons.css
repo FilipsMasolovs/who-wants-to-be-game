@@ -15,7 +15,7 @@
 .wwvce-game-question-answer {
   border: 0;
   padding: 14px 40px;
-  width: calc(50% - 8px);
+  width: 100%;
   color: #fff;
   font-weight: 700;
   font-size: 18px;
@@ -23,9 +23,18 @@
   background-color: #ffae27;
   cursor: pointer;
   transition: 0.4s;
+  margin: 0 10px;
+  transition: background-color 0.4s, outline 0.4s;
 }
 .wwvce-game-question-answer:hover,
 .wwvce-game-question-answer:focus {
   background-color: #f19730;
   outline: none;
+}
+
+@media screen and (min-width: 480px) {
+  .wwvce-game-question-answer {
+    margin: 0;
+    width: calc(50% - 8px);
+  }
 }
