@@ -1,0 +1,7 @@
+.wwvce-game-timer {
+  position: absolute;
+  top: 0; right: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px;
+}

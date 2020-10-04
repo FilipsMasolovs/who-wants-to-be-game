@@ -3,6 +3,7 @@ import Spotlight from './assets/components/spotlight'
 import Copyright from './assets/components/copyright'
 import About from './assets/components/about'
 import Login from './assets/components/login'
+import Game from './assets/components/game'
 
 class App extends React.Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class App extends React.Component {
       <div className='wwvce-container'>
         {!this.state.isGameStarted && <Spotlight />}
         {!this.state.isGameStarted && <Login onOpenAbout={this.openAbout} onStartGame={this.startGame}/>}
+        {this.state.isGameStarted && <Game/>}
         {this.state.isAboutVisible && <About onCloseAbout={this.openAbout}/>}
         <Copyright />
       </div>
