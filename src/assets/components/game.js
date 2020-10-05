@@ -26,14 +26,12 @@ class Game extends React.Component {
           points: this.state.points + answer.value,
           currentQuestion: this.state.currentQuestion + 1
         })
+        if (this.state.currentQuestion === 9) {
+          this.props.onGameFinish(this.state.points + answer.value)
+        }
       }
-      console.log(this.state.points)
     })
     this.refs.child.resetTimer()
-    if (this.state.currentQuestion === 9) {
-      this.props.onGameFinish(this.state.points)
-      return
-    }
   }
 
   render () {
