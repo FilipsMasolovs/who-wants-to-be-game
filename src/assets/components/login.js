@@ -37,11 +37,11 @@ class Login extends React.Component {
         <div className='wwvce-login-inner wwvce-login-inner-controls'>
           <button
             onClick={this.props.onStartGame.bind(this, this.state.playerName)}
-            className='wwvce-login-start-game'
+            className='wwvce-login-start-game-button'
           >START</button>
           <button
             onClick={this.props.onOpenAbout}
-            className='wwvce-login-open-about'
+            className='wwvce-login-open-about-button'
           >Learn more...</button>
         </div>
       </div>

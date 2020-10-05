@@ -14,7 +14,7 @@ class Question extends React.Component {
         <div className='wwvce-game-question-answers'>
           {this.props.question.answers.map((item, key) => (
             <button
-              className='wwvce-game-question-answer'
+              className='wwvce-game-question-answer-button'
               value={item.answer}
               key={key}
               onClick={this.props.onClick.bind(this, item.answer)}
