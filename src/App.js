@@ -26,9 +26,9 @@ class App extends React.Component {
   }
 
   openAbout () {
-    this.setState({
-      isAboutVisible: !this.state.isAboutVisible
-    })
+    this.setState(prevState => ({
+      isAboutVisible: !prevState.isAboutVisible
+    }))
   }
 
   startGame (playerName) {
