@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/who-wants-to-be-game/static/css/main.00202162.chunk.css",
+    "main.css": "/who-wants-to-be-game/static/css/main.9b450dc8.chunk.css",
     "main.js": "/who-wants-to-be-game/static/js/main.3cfdbbd9.chunk.js",
     "main.js.map": "/who-wants-to-be-game/static/js/main.3cfdbbd9.chunk.js.map",
     "runtime-main.js": "/who-wants-to-be-game/static/js/runtime-main.33fb4199.js",
@@ -8,9 +8,9 @@
     "static/js/2.c1f0705c.chunk.js": "/who-wants-to-be-game/static/js/2.c1f0705c.chunk.js",
     "static/js/2.c1f0705c.chunk.js.map": "/who-wants-to-be-game/static/js/2.c1f0705c.chunk.js.map",
     "index.html": "/who-wants-to-be-game/index.html",
-    "precache-manifest.1a95e5cfbe699e124a3bf0d218f5e5e1.js": "/who-wants-to-be-game/precache-manifest.1a95e5cfbe699e124a3bf0d218f5e5e1.js",
+    "precache-manifest.55c21da30b7d58bd86efb550d365c008.js": "/who-wants-to-be-game/precache-manifest.55c21da30b7d58bd86efb550d365c008.js",
     "service-worker.js": "/who-wants-to-be-game/service-worker.js",
-    "static/css/main.00202162.chunk.css.map": "/who-wants-to-be-game/static/css/main.00202162.chunk.css.map",
+    "static/css/main.9b450dc8.chunk.css.map": "/who-wants-to-be-game/static/css/main.9b450dc8.chunk.css.map",
     "static/js/2.c1f0705c.chunk.js.LICENSE.txt": "/who-wants-to-be-game/static/js/2.c1f0705c.chunk.js.LICENSE.txt",
     "static/media/VC_horizontal.png": "/who-wants-to-be-game/static/media/VC_horizontal.635a2b3d.png",
     "static/media/VC_horizontal_white text.png": "/who-wants-to-be-game/static/media/VC_horizontal_white text.f3e41a14.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.33fb4199.js",
     "static/js/2.c1f0705c.chunk.js",
-    "static/css/main.00202162.chunk.css",
+    "static/css/main.9b450dc8.chunk.css",
     "static/js/main.3cfdbbd9.chunk.js"
   ]
 }
