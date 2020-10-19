@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Copyright () {
   return (
@@ -6,10 +6,8 @@ function Copyright () {
       className='wwvce-copyright'
       target='blank'
       href={'https://mr.masolov.com/'}
-    >
-      by: MrMasolov
-    </a>
-  );
+    >by: MrMasolov</a>
+  )
 }
 
-export default Copyright;
+export default Copyright

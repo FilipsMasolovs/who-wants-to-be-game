@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Spotlight from './assets/components/spotlight'
 import Copyright from './assets/components/copyright'
 import About from './assets/components/about'
@@ -9,20 +9,21 @@ import Finished from './assets/components/game/finished'
 
 class App extends React.Component {
   constructor (props) {
-    super(props);
+    super(props)
     this.state = {
       isAboutVisible: false,
       isGameStarted: false,
       isGameFailed: false,
       isGameFinished: false,
       playerName: '',
+      placeholder: '',
       points: 0
-    };
-    this.openAbout = this.openAbout.bind(this);
-    this.startGame = this.startGame.bind(this);
-    this.handleGameFail = this.handleGameFail.bind(this);
-    this.restartGame = this.restartGame.bind(this);
-    this.handleGameFinish = this.handleGameFinish.bind(this);
+    }
+    this.openAbout = this.openAbout.bind(this)
+    this.startGame = this.startGame.bind(this)
+    this.handleGameFail = this.handleGameFail.bind(this)
+    this.restartGame = this.restartGame.bind(this)
+    this.handleGameFinish = this.handleGameFinish.bind(this)
   }
 
   openAbout () {
@@ -33,6 +34,9 @@ class App extends React.Component {
 
   startGame (playerName) {
     if (!playerName) {
+      this.setState({
+        placeholder: 'Please enter your name!'
+      })
       return
     }
     this.setState({
@@ -64,7 +68,8 @@ class App extends React.Component {
     this.setState({
       isGameStarted: false,
       isGameFinished: true,
-      points: e
+      points: e,
+      placeholder: ''
     })
   }
 
@@ -72,15 +77,15 @@ class App extends React.Component {
     return (
       <div className='wwvce-container'>
         {!this.state.isGameStarted && <Spotlight />}
-        {!this.state.isGameStarted && <Login onOpenAbout={this.openAbout} onStartGame={this.startGame} />}
+        {!this.state.isGameStarted && <Login onOpenAbout={this.openAbout} onStartGame={this.startGame} placeholder={this.state.placeholder} />}
         {this.state.isGameStarted && <Game onGameFail={this.handleGameFail} onGameFinish={this.handleGameFinish} />}
         {this.state.isAboutVisible && <About onCloseAbout={this.openAbout} />}
         {this.state.isGameFailed && <Fail onRestartGame={this.restartGame} />}
         {this.state.isGameFinished && <Finished playerName={this.state.playerName} points={this.state.points} onRestartGame={this.restartGame} />}
         <Copyright />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

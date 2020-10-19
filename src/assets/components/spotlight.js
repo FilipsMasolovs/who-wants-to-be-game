@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import logo from '../images/VC_horizontal_white text.png'
 
 function Spotlight () {
@@ -11,7 +11,7 @@ function Spotlight () {
       />
       <h1 className='wwvce-spotlight-title'>Who Wants to Be a Visual Composer expert?</h1>
     </div>
-  );
+  )
 }
 
-export default Spotlight;
+export default Spotlight

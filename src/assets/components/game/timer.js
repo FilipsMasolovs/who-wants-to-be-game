@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 class Timer extends React.Component {
   constructor (props) {
-    super(props);
+    super(props)
     this.state = {
       minutes: 6,
       seconds: 0
-    };
+    }
   }
 
   componentDidMount () {
@@ -40,13 +40,12 @@ class Timer extends React.Component {
     if (this.state.minutes === 0 && this.state.seconds === 0) {
       this.props.onGameFail()
     }
-
     return (
       <div className='wwvce-game-timer'>
         {this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}
       </div>
-    );
+    )
   }
 }
 
-export default Timer;
+export default Timer

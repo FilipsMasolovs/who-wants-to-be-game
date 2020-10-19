@@ -1,13 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 class Question extends React.Component {
   render () {
     function shuffle (answers) {
-      answers.sort(() => Math.random() - 0.5);
+      answers.sort(() => Math.random() - 0.5)
     }
-
     shuffle(this.props.question.answers)
-
     return (
       <div className='wwvce-game-question'>
         <h2 className='wwvce-game-question-title'>{this.props.question.question}</h2>
@@ -22,8 +20,8 @@ class Question extends React.Component {
           ))}
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Question;
+export default Question

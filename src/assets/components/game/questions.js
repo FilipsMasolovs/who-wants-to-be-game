@@ -189,7 +189,7 @@ function Questions () {
         {'answer' : '04.07.2017', 'value' : 0}
       ]
     },
-  ]);
+  ])
 }
 
-export default Questions;
+export default Questions

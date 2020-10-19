@@ -8,11 +8,7 @@
   top: 0;
   right: 0;
   margin: 5px;
-}
-.wwvce-about-close-button:focus,
-.wwvce-fail-close-button:focus,
-.wwvce-finished-close-button:focus {
-  outline: none;
+  transition: 0.4s;
 }
 .wwvce-login-start-game-button {
   background-color: #6bdd4d;
@@ -39,9 +35,15 @@
   cursor: pointer;
   transition: 0.4s;
 }
+.wwvce-about-close-button:hover,
+.wwvce-fail-close-button:hover,
+.wwvce-finished-close-button:hover,
 .wwvce-login-open-about-button:hover {
   color: #ccc;
 }
+.wwvce-about-close-button:focus,
+.wwvce-fail-close-button:focus,
+.wwvce-finished-close-button:focus,
 .wwvce-login-start-game-button:focus,
 .wwvce-login-open-about-button:focus {
   outline: none;

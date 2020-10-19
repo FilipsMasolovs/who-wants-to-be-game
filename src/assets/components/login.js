@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 class Login extends React.Component {
   constructor (props) {
-    super(props);
+    super(props)
     this.state = {
       playerName: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleEnterPress = this.handleEnterPress.bind(this);
+    }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleEnterPress = this.handleEnterPress.bind(this)
   }
 
   handleChange (e) {
@@ -32,6 +32,7 @@ class Login extends React.Component {
             className='wwvce-login-input'
             onChange={this.handleChange}
             onKeyPress={this.handleEnterPress}
+            placeholder={this.props.placeholder}
           />
         </div>
         <div className='wwvce-login-inner wwvce-login-inner-controls'>
@@ -45,8 +46,8 @@ class Login extends React.Component {
           >Learn more...</button>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Login;
+export default Login

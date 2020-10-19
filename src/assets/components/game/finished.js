@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import logo from '../../images/VC_horizontal.png'
 
 class Finished extends React.Component {
@@ -23,8 +23,8 @@ class Finished extends React.Component {
           {this.props.points === 10 && <p className="wwvce-finished-description">You know everything about Visual Composer! You can proudly call yourself a Visual Composer expert!</p>}
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Finished;
+export default Finished

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class Fail extends React.Component {
   render () {
@@ -24,4 +24,4 @@ class Fail extends React.Component {
   }
 }
 
-export default Fail;
+export default Fail

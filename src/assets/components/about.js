@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class About extends React.Component {
   render () {
@@ -26,8 +26,8 @@ class About extends React.Component {
           </p>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default About;
+export default About
