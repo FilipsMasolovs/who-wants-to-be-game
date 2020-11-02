@@ -29,6 +29,10 @@ class Timer extends React.Component {
     }, 1000)
   }
 
+  componentWillUnmount () {
+    clearInterval(this.myInterval)
+  }
+
   resetTimer () {
     this.setState({
       minutes: 6,
