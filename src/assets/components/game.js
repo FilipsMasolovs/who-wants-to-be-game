@@ -37,9 +37,11 @@ class Game extends React.Component {
   }
 
   render () {
+    console.log(this.state.questionIndexes)
+    console.log(this.state.currentQuestion)
     return (
       <div className='wwvce-game'>
-        <Question onClick={this.handleAnswerClick} question={Questions()[this.state.questionIndexes[this.state.currentQuestion]]} />
+        <Question onClick={this.handleAnswerClick} question={Questions.getQuestion(this.state.questionIndexes[this.state.currentQuestion])} />
         <Timer ref={this.child} onGameFail={this.props.onGameFail} />
       </div>
     )

@@ -1,5 +1,7 @@
-function Questions () {
-  return ([
+import React from 'react'
+
+class Questions extends React.Component {
+  static QuestionsList = [
     {
       question: 'When was Visual Composer first published?',
       answers: [
@@ -188,8 +190,12 @@ function Questions () {
         {'answer' : 'HIJ', 'value' : 0},
         {'answer' : 'KLM', 'value' : 0}
       ]
-    },
-  ])
+    }
+  ]
+
+  static getQuestion (question) {
+    return Questions.QuestionsList[question]
+  }
 }
 
 export default Questions
