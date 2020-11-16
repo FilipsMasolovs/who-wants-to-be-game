@@ -22,23 +22,17 @@ class Game extends React.Component {
   }
 
   handleAnswerClick (e) {
-    Questions()[this.state.questionIndexes[this.state.currentQuestion]].answers.forEach((answer) => {
-      if (answer.answer === e) {
-        this.setState(prevState => ({
-          points: prevState.points + answer.value,
-          currentQuestion: prevState.currentQuestion + 1
-        }))
-        if (this.state.currentQuestion === 9) {
-          this.props.onGameFinish(this.state.points + answer.value)
-        }
-      }
-    })
+    this.setState(prevState => ({
+      points: prevState.points + Questions.getAnswer(this.state.questionIndexes[this.state.currentQuestion], e),
+      currentQuestion: prevState.currentQuestion + 1
+    }))
+    if (this.state.currentQuestion === 9) {
+      this.props.onGameFinish(this.state.points + Questions.getAnswer(this.state.questionIndexes[this.state.currentQuestion], e))
+    }
     this.child.current.resetTimer()
   }
 
   render () {
-    console.log(this.state.questionIndexes)
-    console.log(this.state.currentQuestion)
     return (
       <div className='wwvce-game'>
         <Question onClick={this.handleAnswerClick} question={Questions.getQuestion(this.state.questionIndexes[this.state.currentQuestion])} />

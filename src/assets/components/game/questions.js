@@ -1,6 +1,4 @@
-import React from 'react'
-
-class Questions extends React.Component {
+class Questions {
   static QuestionsList = [
     {
       question: 'When was Visual Composer first published?',
@@ -195,6 +193,16 @@ class Questions extends React.Component {
 
   static getQuestion (question) {
     return Questions.QuestionsList[question]
+  }
+
+  static getAnswer (question, answer) {
+    let value = 0
+    Object.keys(Questions.QuestionsList[question].answers).forEach((item) => {
+      if (Questions.QuestionsList[question].answers[item].answer === answer) {
+        value = Questions.QuestionsList[question].answers[item].value
+      }
+    })
+    return value
   }
 }
 

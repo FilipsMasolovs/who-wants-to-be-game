@@ -26,7 +26,10 @@ class App extends React.Component {
     this.handleGameFinish = this.handleGameFinish.bind(this)
   }
 
-  openAbout () {
+  openAbout (e) {
+    if (e.target !== e.currentTarget) {
+     return
+    }
     this.setState(prevState => ({
       isAboutVisible: !prevState.isAboutVisible
     }))
@@ -54,7 +57,11 @@ class App extends React.Component {
     })
   }
 
-  restartGame () {
+  restartGame (e) {
+    if (e.target !== e.currentTarget) {
+      return
+    }
+
     this.setState({
       isGameStarted: false,
       isGameFailed: false,

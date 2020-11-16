@@ -3,7 +3,10 @@ import React from 'react'
 class Fail extends React.Component {
   render () {
     return (
-      <div className='wwvce-fail'>
+      <div
+        onClick={this.props.onRestartGame}
+        className='wwvce-fail'
+      >
         <div className='wwvce-fail-inner'>
           <button
             onClick={this.props.onRestartGame}

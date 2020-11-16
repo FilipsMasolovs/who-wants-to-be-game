@@ -4,7 +4,10 @@ import logo from '../../images/VC_horizontal.png'
 class Finished extends React.Component {
   render () {
     return (
-      <div className='wwvce-finished'>
+      <div
+        onClick={this.props.onRestartGame}
+        className='wwvce-finished'
+      >
         <div className='wwvce-finished-inner'>
           <button
             onClick={this.props.onRestartGame}

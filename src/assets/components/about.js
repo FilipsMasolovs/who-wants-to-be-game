@@ -3,7 +3,10 @@ import React from 'react'
 class About extends React.Component {
   render () {
     return (
-      <div className='wwvce-about'>
+      <div
+        onClick={this.props.onCloseAbout}
+        className='wwvce-about'
+      >
         <div className='wwvce-about-inner'>
           <button
             onClick={this.props.onCloseAbout}
