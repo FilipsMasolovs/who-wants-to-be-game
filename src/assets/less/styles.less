@@ -1,0 +1,239 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: @fontFamily;
+  position: absolute;
+  color: @whiteColor;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+//MAIN
+
+#root {
+  height: 100%;
+}
+.wwvce-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: @backgroundColor;
+  position: relative;
+  gap: 80px;
+  height: 100%;
+}
+.wwvce-spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wwvce-spotlight-logo {
+  height: auto;
+  width: 100%;
+  max-width: 295px;
+  margin: 10px 10px 30px 10px;
+}
+.wwvce-spotlight-title {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0 10px 10px 10px;
+}
+.wwvce-game-question {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.wwvce-game-question-answers {
+  display: flex;
+  flex-flow: wrap;
+}
+.wwvce-copyright {
+  position: absolute;
+  text-decoration: none;
+  color: @whiteColor;
+  font-size: 16px;
+  font-weight: 300;
+  right: 0;
+  bottom: 0;
+}
+.wwvce-game-timer {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px;
+  top: 0;
+  right: 0;
+}
+.wwvce-login,
+.wwvce-login-inner {
+  display: flex;
+  flex-direction: column;
+}
+.wwvce-login-inner {
+  justify-content: space-between;
+  align-items: center;
+  > * {
+    margin: 15px;
+  }
+}
+.wwvce-login-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.wwvce-login-input {
+  padding: 10px 15px;
+  border: 1px @lightGreyColor solid;
+  border-radius: 5px;
+  color: @darkGreyColor;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  width: 100%;
+  max-width: 220px;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: @redColor;
+  }
+}
+@media screen and (min-width: 480px) {
+  .wwvce-login-inner {
+    flex-direction: row;
+  }
+  .wwvce-login-inner-controls {
+    flex-direction: row-reverse;
+  }
+}
+
+//BUTTONS
+
+.wwvce-about-close-button,
+.wwvce-fail-close-button,
+.wwvce-finished-close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  transition: 0.4s;
+  &:hover {
+    color: @mediumGreyColor;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.wwvce-login-start-game-button {
+  background-color: @lightGreenColor;
+  border: 1px @lightGreenColor solid;
+  border-radius: 5px;
+  padding: 10px 13px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 220px;
+  transition: 0.4s;
+  &:hover {
+    background-color: #3F9E26;
+    border-color: #3F9E26;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.wwvce-login-open-about-button {
+  background-color: transparent;
+  color: @whiteColor;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    color: @mediumGreyColor;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.wwvce-game-question-answer-button {
+  border: 0;
+  padding: 14px 40px;
+  width: 100%;
+  color: @whiteColor;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 15px;
+  background-color: @lightOrangeColor;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 5px 10px;
+  transition: background-color 0.4s, outline 0.4s;
+  &:hover {
+    background-color: @darkOrangeColor;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .wwvce-game-question-answer-button {
+    width: calc(50% - 20px);
+  }
+}
+
+//POPUPS
+
+.wwvce-about,
+.wwvce-fail,
+.wwvce-finished {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wwvce-about-inner,
+.wwvce-fail-inner,
+.wwvce-finished-inner {
+  background-color: @whiteColor;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+  color: @blackColor;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+}
+.wwvce-finished-logo {
+  width: 100%;
+  max-width: 295px;
+  height: auto;
+  margin-bottom: 30px;
+}
