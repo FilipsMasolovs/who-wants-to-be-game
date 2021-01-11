@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../images/VC_horizontal_white.png'
+import Logo from 'src/assets/images/VC_horizontal_white.png'
 
 function Spotlight () {
   return (

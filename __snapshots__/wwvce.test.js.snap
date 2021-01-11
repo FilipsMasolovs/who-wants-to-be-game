@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests game component rendering. App component render. 1`] = `
+<div
+  className="wwvce-container"
+>
+  <div
+    className="wwvce-spotlight"
+  >
+    <h1
+      className="wwvce-spotlight-title"
+    >
+      Who Wants to Be a Visual Composer expert?
+    </h1>
+  </div>
+  <div
+    className="wwvce-login"
+  >
+    <div
+      className="wwvce-login-inner"
+    >
+      <span
+        className="wwvce-login-title"
+      >
+        Please enter your name:
+      </span>
+      <input
+        className="wwvce-login-input"
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        placeholder=""
+        type="text"
+      />
+    </div>
+    <div
+      className="wwvce-login-inner wwvce-login-inner-controls"
+    >
+      <button
+        className="wwvce-login-start-game-button"
+        onClick={[Function]}
+      >
+        START
+      </button>
+      <button
+        className="wwvce-login-open-about-button"
+        onClick={[Function]}
+      >
+        Learn more...
+      </button>
+    </div>
+  </div>
+  <a
+    className="wwvce-copyright"
+    href="https://mr.masolov.com/"
+    target="blank"
+  >
+    by: MrMasolov
+  </a>
+</div>
+`;
