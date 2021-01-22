@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from 'src/assets/images/VC_horizontal.png'
+import logo from '../../images/VC_horizontal.png'
 
 class Finished extends React.Component {
   render () {

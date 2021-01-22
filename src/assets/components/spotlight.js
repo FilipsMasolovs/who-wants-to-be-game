@@ -1,11 +1,11 @@
 import React from 'react'
-import Logo from 'src/assets/images/VC_horizontal_white.png'
+import logo from '../images/VC_horizontal_white.png'
 
 function Spotlight () {
   return (
     <div className='wwvce-spotlight'>
       <img
-        src={Logo}
+        src={logo}
         alt='Who Wants to Be a Visual Composer expert?'
         className='wwvce-spotlight-logo'
       />
