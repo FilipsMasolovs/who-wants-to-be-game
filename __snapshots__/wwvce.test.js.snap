@@ -7,6 +7,11 @@ exports[`Tests game component rendering. App component render. 1`] = `
   <div
     className="wwvce-spotlight"
   >
+    <img
+      alt="Who Wants to Be a Visual Composer expert?"
+      className="wwvce-spotlight-logo"
+      src=""
+    />
     <h1
       className="wwvce-spotlight-title"
     >
