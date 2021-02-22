@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import App from './src/App'
+import App from '../src/App'
 
 describe('Tests game component rendering.', () => {
   test('App component render.', () => {

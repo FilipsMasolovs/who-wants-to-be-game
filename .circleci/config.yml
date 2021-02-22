@@ -29,8 +29,11 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: yarn
       - run:
-          name: Run jest test
-          command: jest
+          name: Run build
+          command: npm build
+      - run:
+          name: Run test
+          command: npm test
 
 workflows:
   # Below is the definition of your workflow.
