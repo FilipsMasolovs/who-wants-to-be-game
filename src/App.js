@@ -11,15 +11,13 @@ class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      isAboutVisible: false,
-      isGameStarted: false,
-      isGameFailed: false,
-      isGameFinished: false,
+      gameState: 'initial',
       playerName: '',
       placeholder: '',
       points: 0
     }
     this.openAbout = this.openAbout.bind(this)
+    this.closeAbout = this.closeAbout.bind(this)
     this.startGame = this.startGame.bind(this)
     this.handleGameFail = this.handleGameFail.bind(this)
     this.restartGame = this.restartGame.bind(this)
@@ -27,11 +25,17 @@ class App extends React.Component {
   }
 
   openAbout (e) {
+    this.setState(prevState => ({
+      gameState: 'aboutOpened',
+    }))
+  }
+
+  closeAbout (e) {
     if (e.target !== e.currentTarget) {
-     return
+      return
     }
     this.setState(prevState => ({
-      isAboutVisible: !prevState.isAboutVisible
+      gameState: 'initial',
     }))
   }
 
@@ -43,15 +47,14 @@ class App extends React.Component {
       return
     }
     this.setState({
-      isGameStarted: true,
+      gameState: 'gameStarted',
       playerName: playerName
     })
   }
 
   handleGameFail () {
     this.setState({
-      isGameStarted: false,
-      isGameFailed: true,
+      gameState: 'gameFailed',
       playerName: '',
       points: 0
     })
@@ -63,9 +66,7 @@ class App extends React.Component {
     }
 
     this.setState({
-      isGameStarted: false,
-      isGameFailed: false,
-      isGameFinished: false,
+      gameState: 'initial',
       playerName: '',
       points: 0
     })
@@ -73,22 +74,41 @@ class App extends React.Component {
 
   handleGameFinish (e) {
     this.setState({
-      isGameStarted: false,
-      isGameFinished: true,
+      gameState: 'gameFinished',
       points: e,
       placeholder: ''
     })
   }
 
+  getGameContent () {
+    switch(this.state.gameState) {
+      case 'initial':
+        return (
+            <>
+              <Spotlight />
+              <Login onOpenAbout={this.openAbout} onStartGame={this.startGame} placeholder={this.state.placeholder} />
+            </>
+        )
+        break;
+      case 'aboutOpened':
+        return <About onCloseAbout={this.closeAbout} />
+        break;
+      case 'gameStarted':
+        return <Game onGameFail={this.handleGameFail} onGameFinish={this.handleGameFinish} />
+        break;
+      case 'gameFailed':
+        return <Fail onRestartGame={this.restartGame} />
+        break;
+      case 'gameFinished':
+        return <Finished playerName={this.state.playerName} points={this.state.points} onRestartGame={this.restartGame} />
+        break;
+    }
+  }
+
   render () {
     return (
       <div className='wwvce-container'>
-        {!this.state.isGameStarted && <Spotlight />}
-        {!this.state.isGameStarted && <Login onOpenAbout={this.openAbout} onStartGame={this.startGame} placeholder={this.state.placeholder} />}
-        {this.state.isGameStarted && <Game onGameFail={this.handleGameFail} onGameFinish={this.handleGameFinish} />}
-        {this.state.isAboutVisible && <About onCloseAbout={this.openAbout} />}
-        {this.state.isGameFailed && <Fail onRestartGame={this.restartGame} />}
-        {this.state.isGameFinished && <Finished playerName={this.state.playerName} points={this.state.points} onRestartGame={this.restartGame} />}
+        {this.getGameContent()}
         <Copyright />
       </div>
     )
